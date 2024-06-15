@@ -9,7 +9,9 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        jOrange: '#F28500'
+        jOrange: '#ff8200',
+        jBlack: '#1F1F1F',
+        jAmber: '#ffc100'
       },
     },
   },
