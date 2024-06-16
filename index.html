@@ -10,10 +10,10 @@
     <title>June Wen</title>
   </head>
   <body>
-    <header class="bg-jYellow py-4">
-      <nav class="flex justify-between space-x-4 container mx-auto">
+    <header class="bg-yDot py-4">
+      <nav class="flex justify-center sm:justify-between space-x-4 container mx-auto px-4 max-w-screen-xl">
         <img src="./public/junew_white.png" alt="" class="h-8">
-        <div class="flex content-center">
+        <div class="flex content-center hidden sm:block">
           <a href="/dashboard" class="font-medium px-3 py-2 text-slate-700 rounded-lg  ">Home</a>
           <a href="/team" class="font-medium px-3 py-2 text-slate-700 rounded-lg  ">Team</a>
           <a href="/projects" class="font-medium px-3 py-2 text-slate-700 rounded-lg ">Projects</a>
@@ -22,35 +22,34 @@
       </nav>
     </header>
     <!-- header -->
-    <div class="bg-jYellow bg-dot">
-      <div class="container mx-auto pt-3 bg-transparent px-36">
-        <div class="flex">
-          <div class="basis-1/2">
-            <p class="font-light my-3">Frontend Developer x Multipotentialite</p>
-            <h1 class="font-medium text-4xl">Hello, I'm<br><span class="font-black">June Wen</span> </h1>
-            <p class="my-7">Welcome to my collection of engaging digital experiences. Discover my creations, and let's craft something remarkable together.</p>
-           <div class="my-3">
-            <button class="btn btn-black">
-              Button
-            </button>
-            <button class="btn btn-black">
-              Button
-            </button>
-           </div>
-            
-            
-          </div>
-          <div class="justify-self-center">
-            <img src="./public/june2.png" alt="" class="h-80">
+    <div class="bg-yDot md:h-full">
+      <div class="container mx-auto pt-4 px-16 max-w-screen-xl ">
+      
+          
+          <div class="md:flex md:flex-row">
+    
+            <img src="./public/june_portrait.png" alt="June Wen" class="h-80 object-cover hidden sm:block sm:float-right ">
+          
+            <div>
+              <h1 class="font-medium text-4xl mt-2 text-center sm:text-left sm:mt-12 ">Hello!<br>I'm <span class="font-black">June Wen</span></h1>
+              <div class="text-center sm:text-left sm:pt-2">
+                <p class="font-light mt-3 mb-8 text-white bg-jOrange inline p-1 ">Frontend Developer x Multipotentialite</p>
+              </div>
+              <p class="pt-3 pb-4 text-xl ">Welcome to my collection of engaging digital experiences. Discover my creations, and let's craft something remarkable together.</p>
+              <div class="flex justify-center sm:hidden">
+                <img src="./public/june_portrait.png" alt="June Wen" class="mr-4 h-80 object-cover">
+              </div> 
+            </div>
           </div>
           
-        </div>
+         
+
       </div>
     </div>
 
     <!-- about me -->
     <div class="bg-gray-900 py-16">
-      <div class="container mx-auto text-white text-center px-36">
+      <div class="container mx-auto text-white text-center px-8 lg:px-36">
         <h2 class="text-2xl font-bold">About Me</h2>
         <p class="font-light my-3 text-justify">
           I thrive on engaging and challenging projects. My journey began with WordPress, developing websites and discovering a passion for creating projects from scratch. I later explored Bootstrap and Tailwind for custom designs. This led me to software development with Flutter, where I’ve worked on several mobile app projects and learned Django framework practices.
@@ -59,43 +58,43 @@
     </div>
     <!-- service -->
     <div class="container mx-auto py-16">
-      <div class="container mx-auto text-center px-36">
+      <div class="container mx-auto text-center px-8 lg:px-36">
         <h2 class="text-2xl font-bold">Service</h2>
-        <p class="font-light my-3 text-center">
+        <p class="font-light my-3 text-justify">
           I focus on delivering solutions that meet your needs and enhance your projects. Specializing in web development and design, I create visually appealing, user-friendly digital experiences. Each project is an opportunity to craft something remarkable. Let's collaborate to bring your vision to life and achieve outstanding results.</p>
         <div class="flex flex-wrap mt-20">
 
-          <div class="p-4 w-1/3">
+          <div class="p-4 w-1/2 lg:w-1/3">
             <i class="fa-solid fa-comments fa-2xl" style="color: #ffc100"></i>
             <h4 class="mt-8  font-bold">Website Creation Consultation</h4>
             <p class="font-light text-justify">For individuals or businesses wanting to create their own website but are overwhelmed by the numerous platforms available, I offer guidance on how to get started.</p>
           </div>
-          <div class="p-4 w-1/3">
+          <div class="p-4 w-1/2 lg:w-1/3">
             <i class="fa-solid fa-wand-magic-sparkles fa-2xl" style="color: #ffc100"></i>
             <h4 class="mt-8  font-bold">Redesign</h4>
             <p class="font-light text-justify">Refresh and enhance your existing sales pages and static websites to make them more attractive and engaging.</p>
           </div>
           
-          <div class="p-4 w-1/3">
+          <div class="p-4 w-1/2 lg:w-1/3">
             <i class="fa-solid fa-mobile-screen-button fa-2xl" style="color: #ffc100"></i>
             <h4 class="mt-8  font-bold">Responsive Web Design (RWD)</h4>
             <p class="font-light text-justify">Redesign traditional websites to modern, responsive web design (RWD) that fits today's usage scenarios.</p>
           </div>
 
-          <div class="p-4 w-1/3">
+          <div class="p-4 w-1/2 lg:w-1/3">
             <i class="fa-solid fa-cogs fa-2xl" style="color: #ffc100"></i>
             <h4 class="mt-8 font-bold">CMS Website Creation/Maintenance</h4>
             <p class="font-light text-justify">No time to figure out how to build a website on platforms like WordPress, Shopify, or Wix? Let me handle it for you!</p>
           </div>
 
-          <div class="p-4 w-1/3">
+          <div class="p-4 w-1/2 lg:w-1/3">
             <i class="fa-solid fa-pencil fa-2xl" style="color: #ffc100"></i>
             <h4 class="mt-8 font-bold">Mobile and web UI design</h4>
             <p class="font-light text-justify">Create intuitive and appealing user interfaces for both mobile and web applications.
             </p>
           </div>
 
-          <div class="p-4 w-1/3">
+          <div class="p-4 w-1/2 lg:w-1/3">
             <i class="fa-solid fa-people-carry-box fa-2xl"  style="color: #ffc100"></i>
             <h4 class="mt-8 font-bold">Collaborative Development with Flutter</h4>
             <p class="font-light text-justify">Work together on Flutter projects to develop high-quality mobile applications.
@@ -108,7 +107,7 @@
 
     <!-- portfolio -->
     <div class="py-16 bg-jOrange" >
-      <div class="container mx-auto text-white text-center px-36">
+      <div class="container mx-auto text-white text-center px-8 lg:px-36">
         <h2 class="text-2xl font-bold">My Portfolio</h2>
         <p class="font-light my-3 text-justify">
           Discover my range of design services, from enhancing user interfaces and experiences to comprehensive website creation and maintenance. Let's collaborate to build exceptional digital experiences that meet your needs and exceed your expectations.
@@ -123,32 +122,32 @@
     </div>
     
     <!-- get in touch -->
-    <div class="py-16" style="background-color: white">
-      <div class="container flex mx-auto text-center px-36">
-        <div class="w-1/4">
+    <div class="py-16 bg-bAbstrac " >
+      <div class="container flex flex-col mx-auto px-8 lg:px-36 md:flex-row">
+        <div class="md:w-1/4 mb-4">
           <h2 class="text-2xl font-bold mb-8">Get in touch</h2>
-          <p class="font-light">Have a question or a project in mind? I'd love to hear from you. Let's chat and make something amazing together.</p>
-          <!-- <i class="fa-solid fa-envelope"></i> wenrenjune@gmail.com -->
+          <p class="font-light text-left">Have a question or a project in mind? I'd love to hear from you. Let's chat and make something amazing together.</p>
         </div>
-        <div class="w-3/4">
-          <form action="" method="get" class="form-example">
-            <div class="form-example">
-              <label for="name">Enter your name: </label>
-              <input type="text" name="name" id="name" required />
+        <div class="md:w-3/4">
+
+          <form class=" " target="_blank" action="https://formsubmit.co/3f1a75d0a22d54d09a4f51fc9d5830a4" method="POST">
+           
+            <div class="flex flex-col items-start">
+             
+              <input type="text" name="name" class="mb-3 p-1 w-full" placeholder="Full Name" required>
+              <input type="email" name="email" class="mb-3 p-1 w-full" placeholder="Email Address" required>
+              <textarea placeholder="Your Message" class="mb-3 p-1 w-full" name="message" rows="5" required></textarea>
             </div>
-            <div class="form-example">
-              <label for="email">Enter your email: </label>
-              <input type="email" name="email" id="email" required />
-            </div>
-            <div class="form-example">
-              <input type="submit" value="Subscribe!" />
-            </div>
+            
+            <button type="submit" class="btn btn-black w-full">Submit</button>
           </form>
+
           
         </div>
         
       </div>
     </div>
+    
 
     <!-- footer -->
     <footer class="bg-jBlack py-8">
