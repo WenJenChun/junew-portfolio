@@ -24,10 +24,12 @@
   }
 
 
-  .bg-yDot{
-    background-color: #ffc100;
+  .bg-pDot{
+    /* background-color: #ae9cf1d7; */
+    background-color: #d2d2ff;
+
     opacity: 1;
-    background-image:  radial-gradient(#5b5b5d 0.6000000000000001px, transparent 0.6000000000000001px), radial-gradient(#5b5b5d 0.6000000000000001px, #ffc100 0.6000000000000001px);
+    background-image:  radial-gradient(#5b5b5d 0.6000000000000001px, transparent 0.6000000000000001px), radial-gradient(#5b5b5d 0.6000000000000001px, #d2d2ff 0.6000000000000001px);
     background-size: 24px 24px;
     background-position: 0 0,12px 12px;
   }

@@ -11,7 +11,7 @@ module.exports = {
         current: 'currentColor',
         jOrange: '#ff8200',
         jBlack: '#1F1F1F',
-        jYellow: '#ffc100'
+        jDark: '#042E5F',
       },
       fontFamily:{
         sans:['Quicksand'],
