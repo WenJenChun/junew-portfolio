@@ -11,8 +11,11 @@ module.exports = {
         current: 'currentColor',
         jOrange: '#ff8200',
         jBlack: '#1F1F1F',
-        jAmber: '#ffc100'
+        jYellow: '#ffc100'
       },
+      fontFamily:{
+        sans:['Quicksand'],
+      }
     },
   },
   plugins: [],

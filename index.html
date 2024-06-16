@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/public/junew.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>June Wen</title>
   </head>
   <body>
-    <header class="bg-jOrange py-4">
+    <header class="bg-jYellow py-4">
       <nav class="flex justify-between space-x-4 container mx-auto">
-        <img src="./public/junew.png" alt="" class="h-12">
+        <img src="./public/junew_white.png" alt="" class="h-8">
         <div class="flex content-center">
           <a href="/dashboard" class="font-medium px-3 py-2 text-slate-700 rounded-lg  ">Home</a>
           <a href="/team" class="font-medium px-3 py-2 text-slate-700 rounded-lg  ">Team</a>
@@ -19,12 +22,12 @@
       </nav>
     </header>
     <!-- header -->
-    <div class="bg-jOrange">
-      <div class="container mx-auto pt-3 bg-jOrange px-36">
+    <div class="bg-jYellow bg-dot">
+      <div class="container mx-auto pt-3 bg-transparent px-36">
         <div class="flex">
           <div class="basis-1/2">
             <p class="font-light my-3">Frontend Developer x Multipotentialite</p>
-            <h1 class="font-bold text-4xl">Hello, I'm<br> June Wen</h1>
+            <h1 class="font-medium text-4xl">Hello, I'm<br><span class="font-black">June Wen</span> </h1>
             <p class="my-7">Welcome to my collection of engaging digital experiences. Discover my creations, and let's craft something remarkable together.</p>
            <div class="my-3">
             <button class="btn btn-black">
@@ -67,7 +70,6 @@
             <h4 class="mt-8  font-bold">Website Creation Consultation</h4>
             <p class="font-light text-justify">For individuals or businesses wanting to create their own website but are overwhelmed by the numerous platforms available, I offer guidance on how to get started.</p>
           </div>
-
           <div class="p-4 w-1/3">
             <i class="fa-solid fa-wand-magic-sparkles fa-2xl" style="color: #ffc100"></i>
             <h4 class="mt-8  font-bold">Redesign</h4>
@@ -103,8 +105,9 @@
         </div>
       </div>
     </div>
+
     <!-- portfolio -->
-    <div class="py-16" style="background-color: #ffc100;">
+    <div class="py-16 bg-jOrange" >
       <div class="container mx-auto text-white text-center px-36">
         <h2 class="text-2xl font-bold">My Portfolio</h2>
         <p class="font-light my-3 text-justify">
@@ -121,15 +124,35 @@
     
     <!-- get in touch -->
     <div class="py-16" style="background-color: white">
-      <div class="container mx-auto text-center px-36">
-        <h2 class="text-2xl font-bold mb-8">Get in touch</h2>
-        <i class="fa-solid fa-envelope"></i> wenrenjune@gmail.com
+      <div class="container flex mx-auto text-center px-36">
+        <div class="w-1/4">
+          <h2 class="text-2xl font-bold mb-8">Get in touch</h2>
+          <p class="font-light">Have a question or a project in mind? I'd love to hear from you. Let's chat and make something amazing together.</p>
+          <!-- <i class="fa-solid fa-envelope"></i> wenrenjune@gmail.com -->
+        </div>
+        <div class="w-3/4">
+          <form action="" method="get" class="form-example">
+            <div class="form-example">
+              <label for="name">Enter your name: </label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-example">
+              <label for="email">Enter your email: </label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="form-example">
+              <input type="submit" value="Subscribe!" />
+            </div>
+          </form>
+          
+        </div>
         
       </div>
     </div>
+
+    <!-- footer -->
     <footer class="bg-jBlack py-8">
       <p class="text-white text-center">© JUNEW 2024</p>
-
     </footer>
 
     <script type="module" src="/main.js"></script>
