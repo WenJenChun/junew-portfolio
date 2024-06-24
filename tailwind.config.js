@@ -12,6 +12,7 @@ module.exports = {
         jOrange: '#ff8200',
         jBlack: '#1F1F1F',
         jDark: '#042E5F',
+        jPurple: '#958AFF'
       },
       fontFamily:{
         sans:['Quicksand'],
