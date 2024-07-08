@@ -33,5 +33,5 @@ care168.addEventListener("click", function(e){
 });
 
 closeBtn.addEventListener("click", function(e){
-    if(e.target.attra){}
+    closeModal('modalCare168')
 });
