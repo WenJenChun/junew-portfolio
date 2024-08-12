@@ -65,7 +65,7 @@ const portfolioList = [
     modal.classList.add('hidden');
     modal.classList.remove('flex');
   }
-  
+
   portfolioList.forEach(project => {
     const projectDiv = document.getElementById(project.label);
   
@@ -74,19 +74,20 @@ const portfolioList = [
         <div class="flex justify-between content-center">
           <h2 class="text-2xl font-bold mb-4">${project.title}</h2>
         </div>
-        <div class="flex flex-col md:flex-row">
-          <img src="${project.img}" alt="" class="max-h-64 object-scale-down">
-          <div>
-            <p class="my-auto">${project.descr}</p>
-            <div class="font-light text-gray mt-4">
-              ${project.webUrl ? `<a href="${project.webUrl}" target="_blank">Official Website</a><span> | </span>` : ''}
-              ${project.iOS ? `<a href="${project.iOS}" target="_blank">iOS App</a><span> | </span>` : ''}
-              ${project.android ? `<a href="${project.android}" target="_blank">Android App</a>` : ''}
-            </div>
+        <div class="flex flex-col items-center h-32 md:flex-row">
+        <img src="${project.img}" alt="" class="w-auto">
+        <div class="ml-4">
+          <p>${project.descr}</p>
+          <div class="font-light text-gray-500 mt-4">
+            ${project.webUrl ? `<a href="${project.webUrl}" target="_blank" class="text-blue-500">Official Website</a><span> | </span>` : ''}
+            ${project.iOS ? `<a href="${project.iOS}" target="_blank" class="text-blue-500">iOS App</a><span> | </span>` : ''}
+            ${project.android ? `<a href="${project.android}" target="_blank" class="text-blue-500">Android App</a>` : ''}
           </div>
-        </div>`;
+        </div>
+      </div>`;
       openModal(content);
     });
   });
   
   closeBtn.addEventListener('click', closeModal);
+  

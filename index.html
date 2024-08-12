@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/junew.png" />
+    <link rel="icon" type="image/svg+xml" href="/public/junew_orange.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -123,7 +123,7 @@
     <div class="py-16 max-w-screen-lg mx-auto">
       <div class="container mx-auto">
         <div class="flex flex-wrap justify-between">
-          <div id="care168" class="portfolio-item bg-white mx-auto mt-4 px-4 py-6 shadow-lg rounded text-left w-11/12 md:w-80 lg:max-w-80 hover:cursor-pointer">
+          <div id="care168" class=" bg-white mx-auto mt-4 px-4 py-6 shadow-lg rounded text-left w-11/12 md:w-80 lg:max-w-80 hover:cursor-pointer">
             <div class="bg-gradient-to-br from-slate-50 to-zinc-200 p-3">
               <img src="./public/work_care168.png" alt="">
             </div>
@@ -134,7 +134,7 @@
             <p class="rounded-full bg-indigo-300 text-white text-sm px-2 py-0.5 inline">HTML</p>
             <p class="rounded-full bg-indigo-300 text-white text-sm px-2 py-0.5 inline">RWD</p>
           </div>
-          <div id="lady2" class="portfolio-item mx-auto mt-4 px-4 py-6 shadow-lg rounded text-left w-100% md:w-80 lg:max-w-80">
+          <div id="lady2" class="mx-auto mt-4 px-4 py-6 shadow-lg rounded text-left w-100% md:w-80 lg:max-w-80 hover:cursor-pointer">
             <div class="bg-gradient-to-br from-slate-50 to-zinc-200 p-4">
               <img src="./public/work_lady_two.png" alt="">
             </div>
@@ -143,7 +143,7 @@
             <p class="rounded-full bg-indigo-300 text-white text-sm px-2 py-0.5 inline">HTML</p>
             <p class="rounded-full bg-indigo-300 text-white text-sm px-2 py-0.5 inline">CSS</p>
           </div>
-          <div id="busRental" class="portfolio-item mx-auto mt-4 px-4 py-6 shadow-lg rounded text-left w-100% md:w-80 lg:max-w-80">
+          <div id="busRental" class=" mx-auto mt-4 px-4 py-6 shadow-lg rounded text-left w-100% md:w-80 lg:max-w-80 hover:cursor-pointer">
             <div class="bg-gradient-to-br from-slate-50 to-zinc-200 p-4">
               <img src="./public/work_bus.png" alt="" class="mx-auto max-h-80 md:max-h-40">
             </div>
@@ -151,7 +151,7 @@
             <p class="rounded-full bg-indigo-300 text-white text-sm px-2 py-0.5 inline">Flutter</p>
             <p class="rounded-full bg-indigo-300 text-white text-sm px-2 py-0.5 inline">Django</p>
           </div>
-          <div id="stockAnalysis" class="portfolio-item mx-auto mt-4 px-4 py-6 shadow-lg rounded text-left w-100% md:w-80 lg:max-w-80">
+          <div id="stockAnalysis" class=" mx-auto mt-4 px-4 py-6 shadow-lg rounded text-left w-100% md:w-80 lg:max-w-80 hover:cursor-pointer">
             <div class="bg-gradient-to-br from-slate-50 to-zinc-200 p-4">
               <img src="./public/work_stock.png" alt="" class="mx-auto max-h-80 md:max-h-40">
             </div>
@@ -167,14 +167,15 @@
     </div>
     
     <!-- modal -->
-    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
-      <div class="bg-white rounded-lg shadow-lg p-6 w-11/12 md:w-10/12 lg:w-8/12 xl:w-6/12">
-        <div id="modal-content"></div>
-        <button id="closeBtn" class="text-indigo-500 px-4 py-2"><i class="fa-solid fa-xmark"></i></button>
-        
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center p-4">
+      <div class="relative bg-white rounded-lg shadow-lg p-6 ">
+        <button id="closeBtn" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+          <i class="fa-solid fa-xmark fa-2xl"></i>
+        </button>
+        <div id="modal-content" class="text-left"></div>
       </div>
     </div>
-    
+
 
    
     <!-- get in touch -->
