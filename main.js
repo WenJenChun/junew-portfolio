@@ -3,14 +3,18 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function getLanguages() {
-    const langs = navigator.language;
-  
-    if(langs === "zh-TW"){
-        window.location.replace("https://wenjenchun.github.io/junew-portfolio/");
-    };
-    console.log(langs);
-    
+  const langs = navigator.language || navigator.userLanguage;
+  const currentPath = window.location.pathname;
+
+  if (langs.includes("zh") && !currentPath.includes("/junew-portfolio/zh")) {
+      window.location.replace("http://localhost:5173/junew-portfolio/zh");
+  } else {
+      console.log(langs); // Optionally log the language for debugging
+  }
 }
+
+getLanguages();
+
 getLanguages();
 
 const backToIndex = document.querySelector("#backToIndex");
