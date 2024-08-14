@@ -2,20 +2,18 @@ import './src/styles.css'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function getLanguages() {
-  const langs = navigator.language || navigator.userLanguage;
-  const currentPath = window.location.pathname;
+// function getLanguages() {
+//   const langs = navigator.language || navigator.userLanguage;
+//   const currentPath = window.location.pathname;
 
-  if (langs.includes("zh") && !currentPath.includes("/junew-portfolio/zh")) {
-      window.location.replace("http://localhost:5173/junew-portfolio/zh");
-  } else {
-      console.log(langs); // Optionally log the language for debugging
-  }
-}
+//   if (langs.includes("zh") && !currentPath.includes("/junew-portfolio/zh")) {
+//       window.location.replace("http://localhost:5173/junew-portfolio/zh");
+//   } else {
+//       console.log(langs); // Optionally log the language for debugging
+//   }
+// }
 
-getLanguages();
-
-getLanguages();
+// getLanguages();
 
 const backToIndex = document.querySelector("#backToIndex");
 

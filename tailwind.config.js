@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        transparent: 'transparent',
-        current: 'currentColor',
+        // transparent: 'transparent',
+        // current: 'currentColor',
         jOrange: '#ff8200',
         jBlack: '#1F1F1F',
       },
