@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./pages/index.html",
@@ -7,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // transparent: 'transparent',
-        // current: 'currentColor',
+        transparent: 'transparent',
+        current: 'currentColor',
         jOrange: '#ff8200',
         jBlack: '#1F1F1F',
       },
