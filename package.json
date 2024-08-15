@@ -17,6 +17,8 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
-    "gsap": "^3.12.5"
+    "glob": "^11.0.0",
+    "gsap": "^3.12.5",
+    "vite-plugin-live-reload": "^3.0.3"
   }
 }
