@@ -10,6 +10,10 @@ export default defineConfig({
   plugins: [
     liveReload(['./pages/**/*.html']),
   ],
+  server: {
+    // 啟動 server 時預設開啟的頁面
+    open: 'pages/index.html',
+  },
   build: {
     rollupOptions: {
       input: Object.fromEntries(
