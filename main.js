@@ -25,7 +25,7 @@ const portfolioList = [
     {
       label: "care168",
       title: "Care168 Carer Matching Platform",
-      img: "../public/work_care168.png",
+      img: "../assets/work_care168.png",
       descr: "In this project, I was responsible for developing the application layout using Flutter and integrating it with Django REST APIs for backend functionality. Additionally, I built the web page using Bootstrap to ensure responsive and consistent design.",
       webUrl: "https://care168.com.tw/",
       iOS: "https://apps.apple.com/tw/app/care168/id1644036067",
@@ -34,7 +34,7 @@ const portfolioList = [
     {
       label: "lady2",
       title: "Lady Two Dessert Website",
-      img: "../public/work_lady_two.png",
+      img: "../assets/work_lady_two.png",
       descr: "I used Figma to plan both the frontend and backend pages, and built the responsive web design (RWD) pages using Bootstrap.",
       webUrl: "",
       iOS: "",
@@ -43,7 +43,7 @@ const portfolioList = [
     {
       label: "busRental",
       title: "Tour Bus Rental App",
-      img: "../public/work_bus.png",
+      img: "../assets/work_bus.png",
       descr: "I planned the frontend pages using Figma, and developed the UI and some functionalities using Flutter.",
       webUrl: "",
       iOS: "",
@@ -52,7 +52,7 @@ const portfolioList = [
     {
       label: "stockAnalysis",
       title: "Stock Analysis App",
-      img: "../public/work_stock.png",
+      img: "../assets/work_stock.png",
       descr: "I built the UI using Flutter, and implemented web scraping with Python's Beautiful Soup to retrieve stock market data. Additionally, I used Django to integrate the data.",
       webUrl: "",
       iOS: "",
@@ -61,7 +61,7 @@ const portfolioList = [
     {
       label: "chijiaTech",
       title: "Chijia Technology Official Website",
-      img: "../public/work_chijia.png",
+      img: "../assets/work_chijia.png",
       descr: "I designed the UI using Figma and built the responsive website using Bootstrap.",
       webUrl: "",
       iOS: "",
@@ -70,7 +70,7 @@ const portfolioList = [
     {
       label: "propertyCard",
       title: "Property Agent Personal Website",
-      img: "../public/work_property.png",
+      img: "../assets/work_property.png",
       descr: "I designed the UI for both the frontend and backend using Figma, and built the responsive web pages using Bootstrap. I also developed a backend system with Django that allows users to log in and modify the style and color of their business cards.",
       webUrl: "",
       iOS: "",
@@ -195,8 +195,9 @@ const portfolioList = [
     opacity:1,
     scrollTrigger: {
         trigger: "#serviceSectTitle",
-        start: "top 80%", 
-        end: "bottom 60%"
+        start: "top 70%", 
+        end: "bottom 60%",
+        markers: true,
     }
     })
   gsap.to("#serviceSectIcons", {
