@@ -197,7 +197,6 @@ const portfolioList = [
         trigger: "#serviceSectTitle",
         start: "top 70%", 
         end: "bottom 60%",
-        markers: true,
     }
     })
   gsap.to("#serviceSectIcons", {
