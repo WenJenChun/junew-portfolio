@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>June Wen - 個人履歷</title>
-    <script type="module" crossorigin src="/junew-portfolio/assets/main-CQeJMRUy.js"></script>
-    <link rel="stylesheet" crossorigin href="/junew-portfolio/assets/main-Cmc3lHT3.css">
+    <script type="module" crossorigin src="/junew-portfolio/assets/main-CLTj239o.js"></script>
+    <link rel="stylesheet" crossorigin href="/junew-portfolio/assets/main-DcagofDf.css">
   </head>
   <body>
     <header class="bg-intro py-4">
@@ -81,10 +81,10 @@
           <!-- front end -->
           <div class="flex flex-wrap mt-6">
             <div class="w-full content-center sm:w-1/12">
-              <h2 class="text-xl font-bold text-jBlack bg-gray-100 rounded py-1 mb-3 sm:hidden sm:py-0 sm:mb-0">前端開發</h2>
-              <h2 class="text-xl font-bold text-jBlack hidden sm:block">前端<br>開發</h2>
+              <h2 class="text-xl font-bold text-jBlack bg-gray-200 rounded py-1 mb-3 sm:hidden sm:py-0 sm:mb-0">前端開發</h2>
+              <h2 class="text-xl font-bold text-jBlack bg-gray-200 rounded p-2 hidden sm:block">前端<br>開發</h2>
             </div>
-            <div class="w-full flex flex-wrap text-center sm:w-11/12">
+            <div class="skillIcons w-full flex flex-wrap text-center sm:w-11/12">
               <div class="content-center mx-auto w-4/12 sm:w-2/12">
                 <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="" class="h-1/3 mx-auto">
                 <p class="font-bold">HTML</p>
@@ -116,14 +116,13 @@
                 <p class="text-gray-500">了解</p>
               </div>
             </div>
-
           </div>
           <!-- others -->
           <div class="flex flex-wrap mt-6">
-            <div class="w-full content-center bg-gray-100 rounded py-1 mb-3 sm:w-1/12 sm:bg-transparent ">
-              <h2 class="text-xl font-bold text-jBlack">其他</h2>
+            <div class="w-full content-center mb-3 sm:w-1/12">
+              <h2 class="text-xl font-bold text-jBlack bg-gray-200 rounded py-1">其他</h2>
             </div>
-            <div class="w-full flex flex-wrap text-center sm:w-11/12">
+            <div class="skillIcons w-full flex flex-wrap text-center sm:w-11/12">
               <div class="content-center mx-auto w-4/12 sm:w-2/12">
                 <img src="https://img.icons8.com/?size=100&id=7I3BjCqe9rjG&format=png&color=000000" alt="" class="h-1/3 mx-auto">
                 <p class="font-bold">Flutter</p>
@@ -171,16 +170,17 @@
         <h2 class="text-2xl font-bold pt-4">個人專案</h2>
       </div>
     </div>
+    <!-- personal project -->
     <div class="bg-teal-500 pb-12">
       <div class="container mx-auto max-w-screen-lg">
         <div class="flex flex-wrap">
-          <div class="w-11/12 mx-auto md:w-2/3 md:px-2">
+          <div id="twUKImg" class="w-11/12 mx-auto md:w-2/3 md:px-2">
             <img src="/junew-portfolio/assets/work_tw_uk-Buhfu2De.png" alt="">
           </div>
           <div class="w-11/12 mx-auto mt-2 md:content-center md:w-1/3 md:px-2 md:mt-0">
             <h2 class="font-black text-2xl text-white mb-2 text-center bg-jOrange py-1 border-b-4 border-b-yellow-400">台灣人在英國生活情報</h2>
             <p class="font-light my-3 text-justify text-white ">
-              這是一個以 React 為框架的資訊網站，目標使用者為在英國生活的台灣人。靈感來自於過去在英國打工期間，深刻體會在異國生活的種種挑戰，想找資訊卻碰上網路社群資源、訊息分散等不易搜尋問題，因此萌生建立這個資訊平台的念頭。
+              這是一個以 React 為框架的資訊網站，目標使用者為在英國生活的台灣人。靈感來自於過去在英國打工期間，遇上異國生活的種種挑戰，想找資訊卻發現網路社群資源、訊息分散不易搜尋的問題，因此催生建立這個資訊平台。
               <br><br>目前網站仍在開發中，內容將使用 json-server-auth 及 Render 完成 API 串接。
             </p>
             <a href="https://wenjenchun.github.io/taiwanese_in_the_uk/" target="_blank" ><i class="fa-solid fa-link text-white"></i><p class="inline text-white ms-1">進入網站</p></a>
@@ -190,7 +190,7 @@
     </div>
     <div class="bg-yellow-400 py-2"></div>
 
-    <!-- projects -->
+    <!-- collab projects -->
     <div class="bg-zinc-100">
       <div class="container mx-auto py-6 text-center px-8 lg:px-28 max-w-screen-lg">
         <h2 class="text-2xl font-bold pt-4">合作專案</h2>
@@ -281,12 +281,12 @@
     <div id="certificate" class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-12">
       <h2 class="text-2xl font-bold mb-4 text-center text-white">證照</h2>
       <div class="max-w-screen-lg mx-auto">  
-          <div class="container flex justify-between items-center">
+          <div class="certificates opacity-0 container mx-auto flex justify-between items-center">
             <div class="mx-auto p-4">
-                <img src="/junew-portfolio/assets/certificate_Udacity-dKEJsUbO.png" alt="" class="">
+                <img src="/junew-portfolio/assets/certificate_Udacity-dKEJsUbO.png" alt="" class="certificate-img shadow-xl">
             </div>
             <div class="mx-auto p-4">
-              <img src="/junew-portfolio/assets/certificate_HexSchool-YXGjLuDu.png" alt="" class="">
+              <img src="/junew-portfolio/assets/certificate_HexSchool-YXGjLuDu.png" alt="" class="certificate-img shadow-xl">
             </div>
           </div>
       </div>
