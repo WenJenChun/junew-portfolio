@@ -1,26 +1,16 @@
 import './src/styles.css'
-import './animation'
 import { gsap } from "gsap";
-
-let currentPageName = location.pathname;
-console.log(currentPageName)
-
 
 const backToIndex = document.querySelector("#backToIndex");
 
 backToIndex.addEventListener("click", function(e){
-  if(currentPageName.includes("resume_zh")){
-    window.location.href = "https://wenjenchun.github.io/junew-portfolio/resume_zh.html";
-  } else {
-    window.location.href = "https://wenjenchun.github.io/junew-portfolio/";
-  }
-  
+  window.location.href = "http://localhost:5173/junew-portfolio/pages/resume_zh.html";
 });
 
 const portfolioList = [
     {
       label: "care168",
-      title: "Care168 Carer Matching Platform",
+      title: "Care168 照服員媒合平台",
       img: "../assets/work_care168.png",
       descr: "In this project, I was responsible for developing the application layout using Flutter and integrating it with Django REST APIs for backend functionality. Additionally, I built the web page using Bootstrap to ensure responsive and consistent design.",
       webUrl: "https://care168.com.tw/",
