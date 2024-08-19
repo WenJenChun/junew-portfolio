@@ -1,6 +1,7 @@
 import './src/styles.css'
 import './animation'
 import { gsap } from "gsap";
+import workLadyTwo from "./assets/work_lady_two.png";
 
 let currentPageName = location.pathname;
 console.log(currentPageName)
@@ -33,7 +34,7 @@ const portfolioList = [
     {
       label: "lady2",
       title: "Lady Two Dessert Website",
-      img: "../assets/work_lady_two.png",
+      img: workLadyTwo,
       descr: "I used Figma to plan both the frontend and backend pages, and built the responsive web design (RWD) pages using Bootstrap.",
       titleZh:"二小姐甜點",
       descrZh:"",
