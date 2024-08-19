@@ -1,14 +1,22 @@
 import './src/styles.css'
 import './animation'
 import { gsap } from "gsap";
+import workCare168 from "./assets/work_care168.png";
 import workLadyTwo from "./assets/work_lady_two.png";
+import workBusRental from "./assets/work_bus.png";
+import workStockAnalysis from "./assets/work_stock.png";
+import workChijiaTech from "./assets/work_chijia.png";
+import workHouseAgent from "./assets/work_property.png";
 
+let isEnglish = true;
 let currentPageName = location.pathname;
 console.log(currentPageName)
 
+currentPageName.includes("resume_zh") ? isEnglish = false : isEnglish = true;
 
 const backToIndex = document.querySelector("#backToIndex");
-let isEnglish;
+
+
 backToIndex.addEventListener("click", function(e){
   if(currentPageName.includes("resume_zh")){
     isEnglish = false;
@@ -19,14 +27,16 @@ backToIndex.addEventListener("click", function(e){
   }
 });
 
+console.log(isEnglish)
+
 const portfolioList = [
     {
       label: "care168",
       title: "Care168 Carer Matching Platform",
-      img: "/assets/work_care168.png",
+      img: workCare168,
       descr: "In this project, I was responsible for developing the application layout using Flutter and integrating it with Django REST APIs for backend functionality. Additionally, I built the web page using Bootstrap to ensure responsive and consistent design.",
       titleZh:"Care168照服員媒合平台",
-      descrZh:"我使用 Flutter 建構 App 畫面及串接 restful api 資料，使用 Bootstsrap 建立 RWD 網頁並使用 Django 串接後端",
+      descrZh:"在這個專案我負責使用 Flutter 建構 App 畫面及串接 restful api 資料，使用 Bootstsrap 建立 RWD 網頁並使用 Django 串接後端",
       webUrl: "https://care168.com.tw/",
       iOS: "https://apps.apple.com/tw/app/care168/id1644036067",
       android: "https://play.google.com/store/apps/details?id=com.chijia.fluttercare168"
@@ -37,7 +47,7 @@ const portfolioList = [
       img: workLadyTwo,
       descr: "I used Figma to plan both the frontend and backend pages, and built the responsive web design (RWD) pages using Bootstrap.",
       titleZh:"二小姐甜點",
-      descrZh:"",
+      descrZh:"我使用 Figma 計畫此官網的前台與後台，並且使用 Bootstrap 建立 RWD 自適應網頁畫面",
       webUrl: "",
       iOS: "",
       android: ""
@@ -45,10 +55,10 @@ const portfolioList = [
     {
       label: "busRental",
       title: "Tour Bus Rental App",
-      img: "../assets/work_bus.png",
+      img: workBusRental,
       descr: "I planned the frontend pages using Figma, and developed the UI and some functionalities using Flutter.",
       titleZh:"巴士租賃",
-      descrZh:"",
+      descrZh:"我用 Figma 規劃 App UI，並且以 Flutter 建構出畫面及完成一些基本功能",
       webUrl: "",
       iOS: "",
       android: ""
@@ -56,10 +66,10 @@ const portfolioList = [
     {
       label: "stockAnalysis",
       title: "Stock Analysis App",
-      img: "../assets/work_stock.png",
+      img: workStockAnalysis,
       descr: "I built the UI using Flutter, and implemented web scraping with Python's Beautiful Soup to retrieve stock market data. Additionally, I used Django to integrate the data.",
       titleZh:"財報先生",
-      descrZh:"",
+      descrZh:"我使用 Flutter 建立此 App 畫面，用 Python Beautiful Soup 爬蟲搜集資料，並使用 Django RESTFul API 串接資料。",
       webUrl: "",
       iOS: "",
       android: "https://play.google.com/store/apps/details?id=com.chijia.flutter_stock_new"
@@ -67,10 +77,10 @@ const portfolioList = [
     {
       label: "chijiaTech",
       title: "Chijia Technology Official Website",
-      img: "../assets/work_chijia.png",
+      img: workChijiaTech,
       descr: "I designed the UI using Figma and built the responsive website using Bootstrap.",
       titleZh:"齊家科技官網",
-      descrZh:"",
+      descrZh:"我使用 Figma 設計此官網的前台，並且使用 Bootstrap 建立 RWD 自適應網頁。",
       webUrl: "",
       iOS: "",
       android: ""
@@ -78,10 +88,10 @@ const portfolioList = [
     {
       label: "propertyCard",
       title: "Property Agent Personal Website",
-      img: "../assets/work_property.png",
+      img: workHouseAgent,
       descr: "I designed the UI for both the frontend and backend using Figma, and built the responsive web pages using Bootstrap. I also developed a backend system with Django that allows users to log in and modify the style and color of their business cards.",
       titleZh:"房仲名片網",
-      descrZh:"",
+      descrZh:"此專案提供房仲從業人員一個方便快速的方式建立個人網路名片，我使用 Figma 設計官網及名片網頁UI並以 Bootstrap 建立 RWD 頁面，並在後台設計讓房仲能自行設定外觀的功能。",
       webUrl: "",
       iOS: "",
       android: ""
