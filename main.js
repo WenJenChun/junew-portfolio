@@ -7,22 +7,25 @@ console.log(currentPageName)
 
 
 const backToIndex = document.querySelector("#backToIndex");
-
+let isEnglish;
 backToIndex.addEventListener("click", function(e){
   if(currentPageName.includes("resume_zh")){
+    isEnglish = false;
     window.location.href = "https://wenjenchun.github.io/junew-portfolio/resume_zh.html";
   } else {
+    isEnglish = true;
     window.location.href = "https://wenjenchun.github.io/junew-portfolio/";
   }
-  
 });
 
 const portfolioList = [
     {
       label: "care168",
       title: "Care168 Carer Matching Platform",
-      img: "../assets/work_care168.png",
+      img: "/assets/work_care168.png",
       descr: "In this project, I was responsible for developing the application layout using Flutter and integrating it with Django REST APIs for backend functionality. Additionally, I built the web page using Bootstrap to ensure responsive and consistent design.",
+      titleZh:"Care168照服員媒合平台",
+      descrZh:"我使用 Flutter 建構 App 畫面及串接 restful api 資料，使用 Bootstsrap 建立 RWD 網頁並使用 Django 串接後端",
       webUrl: "https://care168.com.tw/",
       iOS: "https://apps.apple.com/tw/app/care168/id1644036067",
       android: "https://play.google.com/store/apps/details?id=com.chijia.fluttercare168"
@@ -32,6 +35,8 @@ const portfolioList = [
       title: "Lady Two Dessert Website",
       img: "../assets/work_lady_two.png",
       descr: "I used Figma to plan both the frontend and backend pages, and built the responsive web design (RWD) pages using Bootstrap.",
+      titleZh:"二小姐甜點",
+      descrZh:"",
       webUrl: "",
       iOS: "",
       android: ""
@@ -41,6 +46,8 @@ const portfolioList = [
       title: "Tour Bus Rental App",
       img: "../assets/work_bus.png",
       descr: "I planned the frontend pages using Figma, and developed the UI and some functionalities using Flutter.",
+      titleZh:"巴士租賃",
+      descrZh:"",
       webUrl: "",
       iOS: "",
       android: ""
@@ -50,6 +57,8 @@ const portfolioList = [
       title: "Stock Analysis App",
       img: "../assets/work_stock.png",
       descr: "I built the UI using Flutter, and implemented web scraping with Python's Beautiful Soup to retrieve stock market data. Additionally, I used Django to integrate the data.",
+      titleZh:"財報先生",
+      descrZh:"",
       webUrl: "",
       iOS: "",
       android: "https://play.google.com/store/apps/details?id=com.chijia.flutter_stock_new"
@@ -59,6 +68,8 @@ const portfolioList = [
       title: "Chijia Technology Official Website",
       img: "../assets/work_chijia.png",
       descr: "I designed the UI using Figma and built the responsive website using Bootstrap.",
+      titleZh:"齊家科技官網",
+      descrZh:"",
       webUrl: "",
       iOS: "",
       android: ""
@@ -68,11 +79,15 @@ const portfolioList = [
       title: "Property Agent Personal Website",
       img: "../assets/work_property.png",
       descr: "I designed the UI for both the frontend and backend using Figma, and built the responsive web pages using Bootstrap. I also developed a backend system with Django that allows users to log in and modify the style and color of their business cards.",
+      titleZh:"房仲名片網",
+      descrZh:"",
       webUrl: "",
       iOS: "",
       android: ""
     },
   ];
+
+
 
   const modal = document.getElementById('modal');
   const modalContent = document.getElementById('modal-content');
@@ -134,7 +149,7 @@ const portfolioList = [
         ease: "power2.out"
       });
     });
-  
+
     projectDiv.addEventListener('mouseleave', () => {
       gsap.to(projectDiv, {
         rotation: 0,
@@ -143,7 +158,6 @@ const portfolioList = [
       });
     });
 
-
     projectDiv.addEventListener('click', () => {
       const content = `
       <div class="flex flex-col items-center md:flex-row">
@@ -151,8 +165,8 @@ const portfolioList = [
           <img src="${project.img}" alt="${project.title}" class="w-50 h-auto object-contain">
         </div>
         <div class="flex flex-col w-full md:ml-4 md:w-1/2">
-          <h2 class="text-2xl font-bold mb-4">${project.title}</h2>
-          <p class="mb-4">${project.descr}</p>
+          <h2 class="text-2xl font-bold mb-4">${isEnglish? project.title : project.titleZh }</h2>
+          <p class="mb-4">${isEnglish? project.descr : project.descrZh}</p>
           <div class="font-light text-gray-500">
             ${project.webUrl ? `<a href="${project.webUrl}" target="_blank" class="text-blue-500">Official Website</a><span class="mx-2">|</span>` : ''}
             ${project.iOS ? `<a href="${project.iOS}" target="_blank" class="text-blue-500">iOS App</a><span class="mx-2">|</span>` : ''}
