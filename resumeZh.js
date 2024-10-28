@@ -14,8 +14,8 @@ const portfolioList = [
       img: "../assets/work_care168.png",
       descr: "In this project, I was responsible for developing the application layout using Flutter and integrating it with Django REST APIs for backend functionality. Additionally, I built the web page using Bootstrap to ensure responsive and consistent design.",
       webUrl: "https://care168.com.tw/",
-      iOS: "https://apps.apple.com/tw/app/care168/id1644036067",
-      android: "https://play.google.com/store/apps/details?id=com.chijia.fluttercare168"
+      iOS: "",
+      android: ""
     },
     {
       label: "lady2",
@@ -42,7 +42,7 @@ const portfolioList = [
       descr: "I built the UI using Flutter, and implemented web scraping with Python's Beautiful Soup to retrieve stock market data. Additionally, I used Django to integrate the data.",
       webUrl: "",
       iOS: "",
-      android: "https://play.google.com/store/apps/details?id=com.chijia.flutter_stock_new"
+      android: ""
     },
     {
       label: "chijiaTech",
